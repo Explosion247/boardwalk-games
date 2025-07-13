@@ -21,7 +21,13 @@ h2,
 h3 {
   font-family: var(--secondary-font);
   color: var(--primary-color);
+}
+h1,
+h2 {
   text-transform: uppercase;
+}
+h2 {
+  margin-bottom: 2rem;
 }
 .sub-heading-color {
   color: var(--highlight-color);
@@ -41,6 +47,42 @@ h3 {
 #header .lead {
   font-family: var(--secondary-font);
 }
+/* services */
+#services .card-footer {
+  font-weight: bold;
+  color: var(--highlight-color);
+  background-color: transparent;
+}
+#services .card {
+  margin-bottom: 1.5rem;
+}
+/* media query (tablets, 768px and up)*/
+@media screen and (min-width: 768px) {
+  /* Makes all the card bodies the same height */
+  #services .card-body {
+    min-height: 191px;
+  }
+}
+/* media query (tablets, 992px and up)*/
+@media screen and (min-width: 992px) {
+  /* Makes all the card bodies the same height */
+  #services .card-body {
+    min-height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Makes all the card bodies the same height */
+  #services .card-body {
+    min-height: 220px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* Makes all the card bodies the same height */
+  #services .card-body {
+    min-height: 195px;
+  }
+}
+
 /* .container,
 .row {
   border: 2px solid black;
